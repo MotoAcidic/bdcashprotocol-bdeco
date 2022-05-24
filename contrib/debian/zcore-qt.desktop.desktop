@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=BDCashProtocol
+Comment=BDCashProtocol P2P Cryptocurrency
+Exec=bdcashprotocol-qt %u
+Terminal=false
+Type=Application
+Icon=bdcashprotocol128
+MimeType=x-scheme-handler/bdcashprotocol;
+Categories=Office;Finance;
+Name[en_US]=bdcashprotocol-qt.desktop

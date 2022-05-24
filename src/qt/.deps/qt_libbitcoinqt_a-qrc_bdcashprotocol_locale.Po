@@ -1,0 +1,2 @@
+qt/qt_libbitcoinqt_a-qrc_bdcashprotocol_locale.o: \
+ qt/qrc_bdcashprotocol_locale.cpp
