@@ -6,7 +6,7 @@ The best decentralization to cash or the BDCASH is a cryptocurrency forked from 
 [![Discord Chat](https://img.shields.io/discord/561164955924037637.svg?logo=discord)](https://discord.gg/jJtDAmv22J)
 [![Twitter Follow](https://img.shields.io/twitter/follow/BdcashProtocol)](https://twitter.com/BdcashProtocol)
 
-<img style="float:center;" src="https://raw.githubusercontent.com/BdcashProtocol/bdcash-mediakit/main/logo-bdcash/main.png"></br>
+<img style="float:center;" src="https://raw.githubusercontent.com/BdcashProtocol/bdcash-mediakit/main/images/main.png"></br>
 
 |Specifications		   		| 					  |						|					  |
 |:-------------------- 		| :------------------ | :------------------ | :------------------ |
