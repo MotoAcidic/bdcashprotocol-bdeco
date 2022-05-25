@@ -284,7 +284,7 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "www.bdcashprotocol.cash"
+#define PACKAGE_BUGREPORT "www.bdcashprotocol.com"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "BDCashProtocol"
