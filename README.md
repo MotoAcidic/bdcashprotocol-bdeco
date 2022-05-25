@@ -31,6 +31,8 @@ The best decentralization to cash or the BDCASH is a cryptocurrency forked from 
 600000-1000000 | 2 | 30% | 70%|0.05BDECO|
 1000001- to end | 1 | 30% | 70%|0.05BDECO|
 
+<b>PS:</b> <i>Treasure fee will be deducted directly from the POS percentage</i>
+
 
 
 
