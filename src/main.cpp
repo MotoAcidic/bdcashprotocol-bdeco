@@ -1802,6 +1802,7 @@ CAmount GetCurrentCollateral(int nHeight)
     } else if (nHeight >= 20000 && nHeight <= 30000) {
         return 3000;
     }
+}
 
 double ConvertBitsToDouble(unsigned int nBits)
 {
