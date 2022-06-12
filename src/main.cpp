@@ -1795,10 +1795,12 @@ CAmount GetCurrentCollateral()
 {
     int blockHeight = chainActive.Height();
 
-    if (blockHeight < 20000)      { return 2500;} 
-    else if (blockHeight < 30000) { return 3000;} 
-    else if (blockHeight < 40000) { return 4000;} 
-    else if (blockHeight < 50000) { return 5000;}
+    if (blockHeight > 400000) return 10000 * COIN;
+    if (blockHeight > 300000) return 7000 * COIN;
+    if (blockHeight > 200000) return 5000 * COIN;
+    if (blockHeight > 100000) return 3000 * COIN;
+
+    return 2500 * COIN;
 
 }
 
