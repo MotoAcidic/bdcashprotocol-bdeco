@@ -247,7 +247,6 @@ public:
         nBlockZerocoinV2 = 15;
 
         nSubsidyHalvingBlock = 1600;
-        nMasternodeCollateral = 2500;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1652478901;
