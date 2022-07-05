@@ -1795,29 +1795,73 @@ CAmount GetCurrentCollateral()
 {
     int blockHeight = chainActive.Height();
     int gracePeriod = 100;
+    int64_t nCollateral = 2500;
 
-    if (blockHeight > 400000 + gracePeriod) return 10000 * COIN;
-    if (blockHeight <= 400000 + gracePeriod && 
-        blockHeight >= 400000 - gracePeriod)
-        return 10000 || 7000 * COIN;
+    if (blockHeight > 2000000 + gracePeriod) {
+        nCollateral = 50000; 
+        return nCollateral * COIN;
+    }else if (blockHeight <= 2000000 + gracePeriod && blockHeight >= 2000000 - gracePeriod){
+        nCollateral = 50000 || 25000;
+        return nCollateral * COIN;
 
-    if (blockHeight > 300000 + gracePeriod) return 7000 * COIN;
-    if (blockHeight <= 300000 + gracePeriod && 
-        blockHeight >= 300000 - gracePeriod) 
-        return 7000 || 5000 * COIN;
+    }else if (blockHeight > 1600000 + gracePeriod){
+        nCollateral = 25000;
+        return nCollateral * COIN;
+    }else if (blockHeight <= 1600000 + gracePeriod && blockHeight >= 1600000 - gracePeriod){
+        nCollateral = 25000 || 20000;
+        return nCollateral * COIN;
 
-    if (blockHeight > 200000 + gracePeriod) return 5000 * COIN;
-    if (blockHeight <= 200000 + gracePeriod &&
-        blockHeight >= 200000 - gracePeriod)
-        return 5000 || 3000 * COIN;
+    }else if (blockHeight > 1300000 + gracePeriod){
+        nCollateral = 20000;
+        return nCollateral * COIN;
+    }else if (blockHeight <= 1300000 + gracePeriod && blockHeight >= 1300000 - gracePeriod){
+        nCollateral = 20000 || 15000;
+        return nCollateral * COIN;
 
-    if (blockHeight > 100000 + gracePeriod) return 3000 * COIN;
-    if (blockHeight <= 3000 + gracePeriod &&
-        blockHeight >= 3000 - gracePeriod)
-        return 3000 || 2500 * COIN;
+    }else if (blockHeight > 1100000 + gracePeriod){
+        nCollateral = 15000;
+        return nCollateral * COIN;
+    }else if (blockHeight <= 1100000 + gracePeriod && blockHeight >= 1100000 - gracePeriod){
+        nCollateral = 15000 || 10000;
+        return nCollateral * COIN;
 
-    return 2500 * COIN;
+    }else if (blockHeight > 900000 + gracePeriod){
+        nCollateral = 10000;
+        return nCollateral * COIN;
+    }else if (blockHeight <= 900000 + gracePeriod && blockHeight >= 900000 - gracePeriod){
+        nCollateral = 10000 || 7000;
+        return nCollateral * COIN;
 
+    }else if (blockHeight > 600000 + gracePeriod){
+        nCollateral = 7000;
+        return nCollateral * COIN;
+    }else if (blockHeight <= 600000 + gracePeriod && blockHeight >= 600000 - gracePeriod){
+        nCollateral = 7000 || 5000;
+        return nCollateral * COIN;
+
+    }else if (blockHeight > 300000 + gracePeriod){
+        nCollateral = 5000;
+        return nCollateral * COIN;
+    }else if (blockHeight <= 300000 + gracePeriod && blockHeight >= 300000 - gracePeriod){
+        nCollateral = 5000 || 4000;
+        return nCollateral * COIN;
+
+    }else if (blockHeight > 150000 + gracePeriod){
+        nCollateral = 4000;
+        return nCollateral * COIN;
+    }else if (blockHeight <= 150000 + gracePeriod && blockHeight >= 150000 - gracePeriod){
+        nCollateral = 4000 || 3000;
+        return nCollateral * COIN;
+
+    }else if (blockHeight > 1000 + gracePeriod){
+        nCollateral = 3000;
+        return nCollateral * COIN;
+    }else if (blockHeight <= 1000 + gracePeriod && blockHeight >= 1000 - gracePeriod){
+        nCollateral = 3000 || 2500;
+        return nCollateral * COIN;
+    }else{
+    return nCollateral * COIN;
+    }
 }
 
 double ConvertBitsToDouble(unsigned int nBits)
